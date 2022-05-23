@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div id='chart13' class='chart'”></div>
+            <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+            <script type='text/javascript'>
+            Plotly.plot('chart13',{{graph13 | safe}});
+            </script>
+        <br>
+        </div>
+        <div class="col-md-12">
+            <div id='chart14' class='chart'”></div>
+            <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+            <script type='text/javascript'>
+            Plotly.plot('chart14',{{graph14 | safe}});
+            </script>
+        <br>
+        </div>
+        <br>
+        <div class="col-md-12">
+            <div id='chart15' class='chart'”></div>
+            <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+            <script type='text/javascript'>
+            Plotly.plot('chart15',{{graph15 | safe}});
+            </script>
+        </div>
+        <br>
+    </div>
+</div>
+{% endblock %}
+
